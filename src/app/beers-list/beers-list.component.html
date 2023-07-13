@@ -1,0 +1,10 @@
+<div id="pages"><span>Page:</span><a (click)="displayPage(1)">1</a><a (click)="displayPage(2)">2</a><a (click)="displayPage(3)">3</a></div>
+<div>
+  <button [routerLink]="[0]">Get random Beer</button>
+</div>
+<div *ngFor="let beer of beersList">
+  <a [routerLink]="[beer.id]">
+    <p>{{ beer.name }}</p>
+    <img [src]="beer.image_url" />
+  </a>
+</div>

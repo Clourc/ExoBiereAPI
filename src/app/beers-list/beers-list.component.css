@@ -1,0 +1,6 @@
+#pages a {
+    margin-left: 1rem;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
